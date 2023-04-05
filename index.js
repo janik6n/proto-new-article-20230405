@@ -107,17 +107,17 @@ const createArticle = async (articleDirectory, articleFileName, content) => {
 }
 
 (async () => {
-  // Read custom tags data from package.json
+  // Read custom tags data from package.json in the project root directory
   const packageJson = JSON.parse(
     await readFile(
-      new URL('./package.json', import.meta.url)
+      new URL(`${process.cwd()}/package.json`, import.meta.url)
     )
   );
 
   // Current date to YYYY-MM-DD
   const today = new Date().toISOString().slice(0, 10);
-  const contentDirectoryBasePath = packageJson.astroNewArticle.contentPath;
-  const articleDirectory = packageJson.astroNewArticle.blogPath;
+  const contentDirectoryBasePath = `${process.cwd()}/${packageJson.astroNewArticle.contentPath}`;
+  const articleDirectory = `${process.cwd()}/${packageJson.astroNewArticle.blogPath}`;
 
   const userInputs = await askInputs(today, packageJson.astroNewArticle.proposedTags);
 
