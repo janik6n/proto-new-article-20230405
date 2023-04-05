@@ -48,7 +48,7 @@ After installing the package and adding the required configuration, on the proje
 npx new-article
 ```
 
-Optionally you can add this also to `scripts` in `package.json`, for example `"new": "new-article". Then you can run `npm run new`.
+Optionally you can add this also to `scripts` in `package.json`, for example `"new": "new-article"`. Then you can run `npm run new`.
 
 
 MIT License. Copyright janik6n.
