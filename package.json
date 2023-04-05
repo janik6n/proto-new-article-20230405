@@ -1,5 +1,5 @@
 {
-  "name": "proto-new-article-20230405",
+  "name": "@janik6n/proto-new-article-20230405",
   "version": "0.1.0",
   "description": "Scaffold new article for Astro-based blog using Astro Paper theme.",
   "main": "index.js",
