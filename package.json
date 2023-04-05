@@ -1,0 +1,23 @@
+{
+  "name": "proto-new-article-20230405",
+  "version": "0.1.0",
+  "description": "Scaffold new article for Astro-based blog using Astro Paper theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npmtest"
+  ],
+  "author": "janik6n",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "new-article": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "github-slugger": "^2.0.0",
+    "inquirer": "^9.1.5"
+  }
+}
